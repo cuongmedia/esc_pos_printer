@@ -33,7 +33,8 @@ const cFontB = '${esc}M1'; // Font B
 const cTurn90On = '${esc}V1'; // Turn 90° clockwise rotation mode on
 const cTurn90Off = '${esc}V0'; // Turn 90° clockwise rotation mode off
 const cCodeTable = '${esc}t'; // Select character code table [N]
-const cKanjiCancel = '$fs.'; // Cancel Kanji character mode
+const cKanjiOn = '$fs&'; // Select Kanji character mode
+const cKanjiOff = '$fs.'; // Cancel Kanji character mode
 
 // Print Position
 const cAlignLeft = '${esc}a0'; // Left justification
@@ -44,3 +45,15 @@ const cPos = '$esc\$'; // Set absolute print position [nL] [nH]
 // Print
 const cFeedN = '${esc}d'; // Print and feed n lines [N]
 const cReverseFeedN = '${esc}e'; // Print and reverse feed n lines [N]
+
+// Bit Image
+const cRasterImg = '${gs}v0'; // Print raster bit image [obsolete command]
+const cBitImg = '$esc*'; // Set bit image mode
+
+// Barcode
+const cBarcodeSelectPos =
+    '${gs}H'; // Select print position of HRI characters [N]
+const cBarcodeSelectFont = '${gs}f'; // Select font for HRI characters [N]
+const cBarcodeSetH = '${gs}h'; // Set barcode height [N]
+const cBarcodeSetW = '${gs}w'; // Set barcode width [N]
+const cBarcodePrint = '${gs}k'; // Print barcode
